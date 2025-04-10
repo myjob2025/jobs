@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>[项目开发]前端Chrome插件开发-百度文库自动上传,批量上传和调整-好兼职</title>
+    <meta name="referrer" content="no-referrer">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="container">
+    <div class="row mt-lg-5">
+        <div class="col-12">
+            <h3>[项目开发]前端Chrome插件开发-百度文库自动上传,批量上传和调整</h3>
+            <p>
+                <small>2025-04-06 09:25:04</small>
+            </p>
+            <div class="d-block">
+                <pre><h1>百度文库自动上传</h1>
+<h2>目标网站和功能</h2>
+<p><a href="https://wenku.baidu.com/" target="_blank" rel="noopener nofollow">https://wenku.baidu.com/</a></p>
+<p>实现自动化上传文库文档,批量保存为 vip 文档</p>
+<h2>整体需求</h2>
+<ol>
+<li>
+<p>实现浏览器登录百度文库账号</p>
+</li>
+<li>
+<p>进入创作中心-作品管理-文档 进行上传</p>
+</li>
+<li>
+<p>点击右上角上传文档,批量选着文档进行上传</p>
+</li>
+<li>
+<p>将每个文档下的收益类型修改为"VIP 文档"</p>
+</li>
+<li>
+<p>选择全部文档,确认提交,上传文档</p>
+</li>
+<li>
+<p>上传完成后,退出当前账号,重复上面的操作</p>
+</li>
+</ol>
+<h2>操作细节</h2>
+<p>登录账号密码无需验证码和手机验证,账号已经关闭相应安全验证</p>
+<p>上传过程理论上不会出现重复文件,因为文件是原创的,但是出现出重复文件,需要以日志的方式输出</p>
+<p>所有的文档需要保证可靠的设置为 vip 文档</p>
+<h2>数据接口</h2>
+<ol>
+<li>登录用的账号</li>
+</ol>
+<p>会用 excel 文档的方式记录账号信息提供</p>
+<p>文档可以导出为 csv 格式,</p>
+<p>插件需要预留加载这些账号密码的功能和界面</p>
+<ol>
+<li>提供上传的文档列表</li>
+</ol>
+<p>每个账号对应需要上传 15 个文件,这些文件放在一个文件夹,文件夹目录下有数个有序命名的文件夹</p>
+<p>插件需要读取这些文件夹,并按照顺序上传</p>
+<p>不需要考虑账号和文件夹的对应关系</p>
+<p>但是需要避免重复上传,会被判断为重复无法直接上传</p>
+<p>插件应该预留加载这些文档所在主文件夹的功能和界面</p>
+<p>文件夹结构暂定为</p>
+<ul>
+<li>
+<p>主文件夹</p>
+</li>
+<li>
+<p>word0000</p>
+</li>
+<li>
+<p>文件 1</p>
+</li>
+<li>
+<p>文件 2</p>
+</li>
+<li>
+<p>...</p>
+</li>
+<li>
+<p>word0001</p>
+</li>
+<li>
+<p>文件 1</p>
+</li>
+<li>
+<p>文件 2</p>
+</li>
+<li>
+<p>...</p>
+</li>
+<li>
+<p>word0002</p>
+</li>
+<li>
+<p>文件 1</p>
+</li>
+<li>
+<p>文件 2</p>
+</li>
+<li>
+<p>...</p>
+</li>
+</ul></pre>
+            </div>
+            <p>
+                链接地址：https://eleduck.com/posts/0Xf5oG
+            </p>
+            <p>发布人：<a href="https://eleduck.com/users/JRh0VyL" target="_blank">CanNev</a></p>
+            <p class="mt-3">
+                <a href="https://eleduck.com/posts/0Xf5oG" target="_blank" rel="nofollow">点击查看</a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

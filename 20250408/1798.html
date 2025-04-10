@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>STM32F4芯片扩展串口程序，一个主串口控制其他串口连接断开发送数据接收数据-好兼职</title>
+    <meta name="referrer" content="no-referrer">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="container">
+    <div class="row mt-lg-5">
+        <div class="col-12">
+            <h3>STM32F4芯片扩展串口程序，一个主串口控制其他串口连接断开发送数据接收数据</h3>
+            <p>
+                <small>2025-04-08 22:23:18</small>
+            </p>
+            <div class="d-block">
+                <pre>发送数据：当通过串口 1 接收到数据时，如果数据的开头是 “01 XX”（XX 代表具体的串口通道编号，例如 02 代表串口 2），STM32F407VGT6 需要去掉前面的 “01” 编码，然后将剩余的数据发送到对应的串口通道（这里是串口 2）。
+接收数据：当某个串口（如串口 2）接收到数据后，STM32F407VGT6 需要在数据的最前面加上对应的串口编码（如对于串口 2 加上 “02”），然后通过串口 1 将数据返回。
+连接参数控制：所有串口的连接、断开、波特率等连接参数都需要通过串口 1 发送特定的控制指令来进行设置。例如，发送特定格式的指令来改变串口 2 的波特率，或者断开串口 3 的连接等。
+就类似串口拓展用，通过一个主串口控制其他串口</div></pre>
+            </div>
+            <p>
+                链接地址：https://bbs.125.la/dtask/27520.html
+            </p>
+            <p>发布人：无锡市</p>
+            <p class="mt-3">
+                <a href="https://bbs.125.la/dtask/27520.html" target="_blank" rel="nofollow">点击查看</a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
